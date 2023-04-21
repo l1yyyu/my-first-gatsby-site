@@ -8,8 +8,8 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop --port 8080",
-    "start": "gatsby develop --port 8080",
+    "develop": "gatsby develop --port 8888",
+    "start": "gatsby develop --port 8888",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
