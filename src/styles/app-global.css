@@ -1,0 +1,194 @@
+html {
+    font-size: 10px;
+  }
+  body {
+    user-select: none;
+    background-repeat: no-repeat;
+    font-family: 'PingFang SC', 'Source Sans Pro', 'Helvetica Neue', Arial, 'Microsoft YaHei', 'WenQuanYi Micro Hei',
+      sans-serif;
+  }
+  
+  body,
+  body * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
+  img {
+    border: none;
+  }
+  
+  .share-logo {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+  }
+  
+  .swiper-pagination-bullet {
+    opacity: 1 !important;
+  }
+  
+  @keyframes bigTosmall {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .hidden-pc {
+    display: none !important;
+  }
+  
+  .hidden-mb {
+    display: block !important;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .hidden-pc {
+      display: block !important;
+    }
+  
+    .hidden-mb {
+      display: none !important;
+    }
+  }
+  
+  /* gatsby-image */
+  .gatsby-image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gatsby-image-wrapper img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .gatsby-image-wrapper [data-main-image] {
+    opacity: 0;
+    transform: translateZ(0);
+    transition: opacity 0.25s linear;
+    will-change: opacity;
+  }
+  
+  .gatsby-image-wrapper [data-placeholder-image] {
+    background-color: #99a9bf !important;
+  }
+  
+  .gatsby-image-wrapper-constrained {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* 隐藏滚动条 */
+  /* opera */
+  * .-o-scrollbar {
+    -moz-appearance: none !important;
+    background: rgba(0, 255, 0, 0) !important;
+  }
+  
+  *::-o-scrollbar-button {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  *::-o-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  *::-o-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  *::-o-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  *::-o-scrollbar-corner {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  *::-o-scrollbar-resizer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  /* ie */
+  * {
+    /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+    -ms-scroll-chaining: chained;
+    -ms-overflow-style: none;
+    -ms-content-zooming: zoom;
+    -ms-scroll-rails: none;
+    -ms-content-zoom-limit-min: 100%;
+    -ms-content-zoom-limit-max: 100%;
+    -ms-scroll-snap-type: proximity;
+    -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+  
+    /* please check this http://help.dottoro.com/lcmeikdj.php */
+    scrollbar-base-color: white;
+    scrollbar-3dlight-color: white;
+    scrollbar-highlight-color: white;
+    scrollbar-track-color: white;
+    scrollbar-arrow-color: white;
+    scrollbar-shadow-color: white;
+    scrollbar-darkshadow-color: white;
+  }
+  
+  /* firefox */
+  * {
+    /*火狐下隐藏滚动条*/
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none; /*Firefox64 supported*/
+  }
+  
+  /* Chrome下隐藏滚动条，溢出可以透明滚动 */
+  * ::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  * ::-webkit-scrollbar-button {
+    background-color: transparent;
+  }
+  
+  * ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-resizer {
+    background-color: transparent;
+  }
+  
+  *:focus {
+    outline: none !important;
+  }
+  

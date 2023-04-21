@@ -6,7 +6,7 @@ import * as styles from "./index.module.less";
 const Home = () => {
   return (
     <Layout>
-      <div className={classnames(styles.bodyWrapper)}>主体</div>
+      <div className={classnames(styles.bodyWrapper, "text-center")}>主体</div>
     </Layout>
   );
 };
