@@ -12,7 +12,8 @@ const config: GatsbyConfig = {
   plugins: [
     `gatsby-plugin-split-css`,
     `gatsby-plugin-less`,
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`
   ],
   
 }
