@@ -9,7 +9,12 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-split-css`,
+    `gatsby-plugin-less`,
+    `gatsby-plugin-postcss`
+  ],
+  
 }
 
 export default config
